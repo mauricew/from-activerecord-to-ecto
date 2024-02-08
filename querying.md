@@ -33,8 +33,8 @@ In this situation the primary key is an integer with the value **1**.
 
 ActiveRecord:
 ~~~~ruby
-User.find(1)
-User.find!(1) # raises ActiveRecord::RecordNotFound
+User.find_by(id: 1)
+User.find(1)  # raises ActiveRecord::RecordNotFound
 ~~~~
 
 Ecto:
